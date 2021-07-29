@@ -31,7 +31,7 @@ namespace Test
                 String text = _smsMessage.GenerateErrors(errors, _intervalInMinutes);
                 String sender = "INFORMACJA";
                 data.Add("details", "1");
-                var result = serwerssms.messages.sendSms(phone, text, sender, data).ToString();
+                var result = serwerssms.messages.SendSms(phone, text, sender, data).ToString();
                 Console.WriteLine(result);
             }
             catch(Exception ex)

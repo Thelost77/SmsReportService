@@ -56,7 +56,7 @@ namespace serwersms.lib
 		 *          @option String "text"
 		 */
 		
-		public Object sendSms( String phone, String text, String sender = null,Dictionary<String, String> data = null) {
+		public Object SendSms( String phone, String text, String sender = null,Dictionary<String, String> data = null) {
         	
 			if( data == null ){
 				

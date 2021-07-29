@@ -76,7 +76,7 @@ namespace SmsReportService
             String text = _smsMessage.GenerateErrors(errors,_intervalInMinutes);
             String sender = "INFORMACJA";
             data.Add("details", "1");
-            serwerssms.messages.sendSms(_phone, text, sender, data);
+            serwerssms.messages.SendSms(_phone, text, sender, data);
 
             Logger.Info("Error sent.");
         }
